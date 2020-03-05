@@ -42,7 +42,7 @@ namespace SlackUnfurling
             request.AddHeader("User-Agent", "PostmanRuntime/7.15.2");
             request.AddHeader("Content-Type", "application/json,multipart/form-data; boundary=--------------------------102615583454824705594555");
             request.AddHeader("Accept", "application/json");
-            request.AddHeader("Authorization", "Bearer xoxp-552987880769-553885500229-720444134945-a697596ec808566db8f3ae4c943da725");
+            request.AddHeader("Authorization", "");
             request.AddHeader("content-type", "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
             request.AddParameter("multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW", "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"channel\"\r\n\r\n" + channelName + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n" + ts + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"unfurls\"\r\n\r\n{\"" + linkUrl + "\":{\"text\":\"" + articleContent + "\",\"image_url\":\"" + imageUrl + "\",\"title\":\"" + pageTitle + "\",\"title_link\":\"" + linkUrl + "\",\"color\":\"#E20074\"}}\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
